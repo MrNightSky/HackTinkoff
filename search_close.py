@@ -13,7 +13,7 @@ import gensim.downloader as api
 
 model = api.load("word2vec-ruscorpora-300")
 
-DATA_PATH = '.\data\\added_data'
+DATA_PATH = './data//added_data'
 
 File_names_by_cat={'sport':['double-sport.csv', 'pro-bike.csv'],'food':['abrikos.csv', 'auchan.csv', 'foodband.csv'],'tablets':['iherb_food.csv', 'gold-standart.csv', 'iherb_sport.csv']}
 

@@ -1,0 +1,123 @@
+[I 18:56:12.598 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 18:56:16.311 NotebookApp] Serving notebooks from local directory: /home/nightsky/HackTinkoff
+[I 18:56:16.312 NotebookApp] The Jupyter Notebook is running at:
+[I 18:56:16.312 NotebookApp] http://(nightmachine or 127.0.0.1):8888/
+[I 18:56:16.312 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 18:56:16.341 NotebookApp] 302 GET / (93.175.28.39) 0.63ms
+[W 18:56:16.560 NotebookApp] Clearing invalid/expired login cookie username-84-201-142-232-8888
+[W 18:56:16.561 NotebookApp] Clearing invalid/expired login cookie username-84-201-142-232-8888
+[I 18:56:16.562 NotebookApp] 302 GET /tree? (93.175.28.39) 2.18ms
+[I 18:56:19.444 NotebookApp] 302 POST /login?next=%2Ftree%3F (93.175.28.39) 1.05ms
+[W 18:56:30.264 NotebookApp] Notebook word2VecSearch.ipynb is not trusted
+[I 18:56:32.089 NotebookApp] Kernel started: cfb2133f-1345-4774-8819-1509f719c4c4
+[I 18:56:34.461 NotebookApp] Adapting to protocol v5.1 for kernel cfb2133f-1345-4774-8819-1509f719c4c4
+[I 18:58:30.901 NotebookApp] Saving file at /word2VecSearch.ipynb
+[W 18:58:30.902 NotebookApp] Notebook word2VecSearch.ipynb is not trusted
+[I 19:00:30.976 NotebookApp] Saving file at /word2VecSearch.ipynb
+[I 19:00:40.674 NotebookApp] Saving file at /search_close.py
+[I 19:00:47.575 NotebookApp] Starting buffering for cfb2133f-1345-4774-8819-1509f719c4c4:1fda2b05c28545989f56341db739fb43
+[I 19:00:48.291 NotebookApp] Kernel restarted: cfb2133f-1345-4774-8819-1509f719c4c4
+[I 19:00:49.015 NotebookApp] Adapting to protocol v5.1 for kernel cfb2133f-1345-4774-8819-1509f719c4c4
+[I 19:00:49.016 NotebookApp] Restoring connection for cfb2133f-1345-4774-8819-1509f719c4c4:1fda2b05c28545989f56341db739fb43
+[I 19:00:49.016 NotebookApp] Replaying 3 buffered messages
+[I 19:02:14.608 NotebookApp] Saving file at /get_offer.py
+[I 19:02:22.466 NotebookApp] Starting buffering for cfb2133f-1345-4774-8819-1509f719c4c4:1fda2b05c28545989f56341db739fb43
+[I 19:02:23.277 NotebookApp] Kernel restarted: cfb2133f-1345-4774-8819-1509f719c4c4
+[I 19:02:24.073 NotebookApp] Adapting to protocol v5.1 for kernel cfb2133f-1345-4774-8819-1509f719c4c4
+[I 19:02:24.074 NotebookApp] Restoring connection for cfb2133f-1345-4774-8819-1509f719c4c4:1fda2b05c28545989f56341db739fb43
+[I 19:02:24.074 NotebookApp] Replaying 6 buffered messages
+[I 19:02:30.926 NotebookApp] Saving file at /word2VecSearch.ipynb
+[I 19:02:42.778 NotebookApp] Kernel interrupted: cfb2133f-1345-4774-8819-1509f719c4c4
+[I 19:04:28.353 NotebookApp] Saving file at /word2VecSearch.ipynb
+[W 19:06:24.076 NotebookApp] WebSocket ping timeout after 119978 ms.
+[E 19:06:28.047 NotebookApp] Uncaught exception in ZMQStream callback
+    Traceback (most recent call last):
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py", line 432, in _run_callback
+        callback(*args, **kwargs)
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/tornado/stack_context.py", line 300, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py", line 196, in <lambda>
+        self.on_recv(lambda msg: callback(self, msg), copy=copy)
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/notebook/services/kernels/handlers.py", line 419, in _on_zmq_reply
+        super(ZMQChannelsHandler, self)._on_zmq_reply(stream, msg)
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/notebook/base/zmqhandlers.py", line 250, in _on_zmq_reply
+        self.write_message(msg, binary=isinstance(msg, bytes))
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/tornado/websocket.py", line 259, in write_message
+        raise WebSocketClosedError()
+    tornado.websocket.WebSocketClosedError
+[E 19:06:28.169 NotebookApp] Uncaught exception in zmqstream callback
+    Traceback (most recent call last):
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py", line 450, in _handle_events
+        self._handle_recv()
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py", line 480, in _handle_recv
+        self._run_callback(callback, msg)
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py", line 432, in _run_callback
+        callback(*args, **kwargs)
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/tornado/stack_context.py", line 300, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py", line 196, in <lambda>
+        self.on_recv(lambda msg: callback(self, msg), copy=copy)
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/notebook/services/kernels/handlers.py", line 419, in _on_zmq_reply
+        super(ZMQChannelsHandler, self)._on_zmq_reply(stream, msg)
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/notebook/base/zmqhandlers.py", line 250, in _on_zmq_reply
+        self.write_message(msg, binary=isinstance(msg, bytes))
+      File "/opt/conda/envs/py36/lib/python3.6/site-packages/tornado/websocket.py", line 259, in write_message
+        raise WebSocketClosedError()
+    tornado.websocket.WebSocketClosedError
+ERROR:asyncio:Exception in callback BaseAsyncIOLoop._handle_events(30, 1)
+handle: <Handle BaseAsyncIOLoop._handle_events(30, 1)>
+Traceback (most recent call last):
+  File "/opt/conda/envs/py36/lib/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+  File "/opt/conda/envs/py36/lib/python3.6/site-packages/tornado/platform/asyncio.py", line 122, in _handle_events
+    handler_func(fileobj, events)
+  File "/opt/conda/envs/py36/lib/python3.6/site-packages/tornado/stack_context.py", line 300, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/opt/conda/envs/py36/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py", line 450, in _handle_events
+    self._handle_recv()
+  File "/opt/conda/envs/py36/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py", line 480, in _handle_recv
+    self._run_callback(callback, msg)
+  File "/opt/conda/envs/py36/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py", line 432, in _run_callback
+    callback(*args, **kwargs)
+  File "/opt/conda/envs/py36/lib/python3.6/site-packages/tornado/stack_context.py", line 300, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/opt/conda/envs/py36/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py", line 196, in <lambda>
+    self.on_recv(lambda msg: callback(self, msg), copy=copy)
+  File "/opt/conda/envs/py36/lib/python3.6/site-packages/notebook/services/kernels/handlers.py", line 419, in _on_zmq_reply
+    super(ZMQChannelsHandler, self)._on_zmq_reply(stream, msg)
+  File "/opt/conda/envs/py36/lib/python3.6/site-packages/notebook/base/zmqhandlers.py", line 250, in _on_zmq_reply
+    self.write_message(msg, binary=isinstance(msg, bytes))
+  File "/opt/conda/envs/py36/lib/python3.6/site-packages/tornado/websocket.py", line 259, in write_message
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+[I 19:06:29.078 NotebookApp] Starting buffering for cfb2133f-1345-4774-8819-1509f719c4c4:1fda2b05c28545989f56341db739fb43
+[I 19:09:39.191 NotebookApp] Adapting to protocol v5.1 for kernel cfb2133f-1345-4774-8819-1509f719c4c4
+[I 19:09:39.192 NotebookApp] Restoring connection for cfb2133f-1345-4774-8819-1509f719c4c4:1fda2b05c28545989f56341db739fb43
+[I 19:09:39.192 NotebookApp] Replaying 41 buffered messages
+[I 19:10:23.992 NotebookApp] Saving file at /word2VecSearch.ipynb
+[I 19:18:24.088 NotebookApp] Saving file at /word2VecSearch.ipynb
+[I 19:19:30.816 NotebookApp] Kernel interrupted: cfb2133f-1345-4774-8819-1509f719c4c4
+[I 19:20:23.970 NotebookApp] Saving file at /word2VecSearch.ipynb
+[W 19:23:39.193 NotebookApp] WebSocket ping timeout after 119779 ms.
+[I 19:23:44.198 NotebookApp] Starting buffering for cfb2133f-1345-4774-8819-1509f719c4c4:1fda2b05c28545989f56341db739fb43
+[I 19:32:23.041 NotebookApp] Adapting to protocol v5.1 for kernel cfb2133f-1345-4774-8819-1509f719c4c4
+[I 19:32:23.042 NotebookApp] Restoring connection for cfb2133f-1345-4774-8819-1509f719c4c4:1fda2b05c28545989f56341db739fb43
+[I 19:34:17.619 NotebookApp] Saving file at /word2VecSearch.ipynb
+[I 19:36:17.838 NotebookApp] Saving file at /word2VecSearch.ipynb
+[I 19:36:28.452 NotebookApp] Saving file at /get_offer.py
+[I 19:36:42.302 NotebookApp] Starting buffering for cfb2133f-1345-4774-8819-1509f719c4c4:1fda2b05c28545989f56341db739fb43
+[I 19:36:43.113 NotebookApp] Kernel restarted: cfb2133f-1345-4774-8819-1509f719c4c4
+[I 19:36:43.771 NotebookApp] Adapting to protocol v5.1 for kernel cfb2133f-1345-4774-8819-1509f719c4c4
+[I 19:36:43.772 NotebookApp] Restoring connection for cfb2133f-1345-4774-8819-1509f719c4c4:1fda2b05c28545989f56341db739fb43
+[I 19:36:43.772 NotebookApp] Replaying 3 buffered messages
+[I 19:38:17.575 NotebookApp] Saving file at /word2VecSearch.ipynb
+[I 19:38:43.377 NotebookApp] Saving file at /get_offer.py
+[I 19:38:51.531 NotebookApp] Starting buffering for cfb2133f-1345-4774-8819-1509f719c4c4:1fda2b05c28545989f56341db739fb43
+[I 19:38:52.357 NotebookApp] Kernel restarted: cfb2133f-1345-4774-8819-1509f719c4c4
+[I 19:38:53.002 NotebookApp] Adapting to protocol v5.1 for kernel cfb2133f-1345-4774-8819-1509f719c4c4
+[I 19:38:53.003 NotebookApp] Restoring connection for cfb2133f-1345-4774-8819-1509f719c4c4:1fda2b05c28545989f56341db739fb43
+[I 19:38:53.003 NotebookApp] Replaying 3 buffered messages
+[I 19:40:18.026 NotebookApp] Saving file at /word2VecSearch.ipynb
+[I 19:46:17.611 NotebookApp] Saving file at /word2VecSearch.ipynb
+[I 19:58:17.621 NotebookApp] Saving file at /word2VecSearch.ipynb
+[I 20:56:17.593 NotebookApp] Saving file at /word2VecSearch.ipynb

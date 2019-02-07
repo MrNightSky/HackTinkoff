@@ -1,5 +1,6 @@
 import json
 import pandas as pd
+import os
 
 d = {
     'abrikos': {
@@ -101,6 +102,9 @@ def Make_json(data, files, name):
         single_answer['product']=product
         Output.append(single_answer)
         
-    with open('result/%s.json' %name, 'w+', encoding='utf-8') as outfile:
+    CUR_DIR = os.getcwd()
+    os.chdir('./results')
+    with open('%s.json' %name, 'w+', encoding='utf-8') as outfile:
         json.dump(Output, outfile, ensure_ascii=False, indent=4)
+    os.chdir(CUR_DIR)
         
