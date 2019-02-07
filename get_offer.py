@@ -1,3 +1,6 @@
+import json
+import pandas as pd
+
 d = {
     'abrikos': {
         'offer': 'Абрикос',
@@ -72,7 +75,32 @@ d = {
         'advert_text': 'The North Face, Arcteryx, Salomon и десятки других брендов в Outdoor-центре «Трамонтана». Профессиональные консультации, бесплатная доставка, быстрый и простой обмен и возврат товара, и любые формы оплаты сделают покупку удобной и безопасной. Спецпредложение распространяется при оплате картой на сайте, а так же в магазине на ул. Бронницкая, 24.'
     }
 }
-def get_offer(file):
-    return d[file.split('.')[0]]
-
-# get_offer('gold-standart.csv')
+def get_offer(files):
+    res = []
+    for file in files:
+        res.append(d[file.split('.')[0]])
+    return res
+      
+def Make_json(data, files, name):
+    """
+    data - pd.Dataframe['Название','Описание','Цена','NAME','WEB','CASH_BACK','TRANCHE_STMT_COUNT','OFFER_TYPE','ADVERT_TEXT']
+    output=json[5]
+    """
+    Output = []
+    offer_dict = get_offer(files)
+    for i in range(len(files)):
+        
+        single_answer={}
+        
+        offer = offer_dict[i]
+       
+        product={}
+        product=[{'Item':data['Название'].iloc[i],'Attributes':data['Описание'].iloc[i],'Price':data['Цена'].iloc[i]}]  
+        
+        single_answer['offer']=offer
+        single_answer['product']=product
+        Output.append(single_answer)
+        
+    with open('result/%s.json' %name, 'w+', encoding='utf-8') as outfile:
+        json.dump(Output, outfile, ensure_ascii=False, indent=4)
+        
